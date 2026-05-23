@@ -6,10 +6,10 @@ dotenv.config();
 const app = express();
 
 // CORS CONFIGURATION
-// Replace 'https://your-frontend-vercel-url.vercel.app' with your actual Vercel URL after deploying the frontend.
+// Updated with your live Vercel frontend URL to allow secure requests
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? 'https://your-frontend-vercel-url.vercel.app' 
+    ? 'https://chatbot-lac-alpha-57.vercel.app' 
     : 'http://localhost:5173' // Default Vite local port
 }));
 
