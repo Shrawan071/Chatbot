@@ -21,7 +21,8 @@ sendBtn.addEventListener('click', async () => {
     // Show loading dots while waiting
     showThinkingDots();
 
-    const response = await fetch('http://localhost:5000/api', {
+    // UPDATED: Points directly to your live Render backend URL instead of localhost
+    const response = await fetch('https://chatbot-8jke.onrender.com/api', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ prompt: message, history })
